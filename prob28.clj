@@ -1,12 +1,13 @@
 ;Project Euler - Problem 28
-;The sum of a diagonals in a spiraling number square
-;Examining the example 5x5 cube, a pattern emerges:
-; 1 (+2) 3 (+2) 5 (+2) 7 (+2) 9 (+4) 13 (+4) 17....
-;So, we start at 1 and the incrementer is 2. Do that 4 times,
-;then add 2 to the incrementer. Go 4 times, (+ incr 2), ...
-
-;So, with the pattern found, we can generate a lazy sequence
-;and sum everything up
+;Breaking this problem down, we can see that we want to
+;be able to grab the diagonals for each square and sum 
+;those. The get-diagonals-for-square returns a list of
+;numbers representing the corners of a square that size,
+;using the basic pattern set for (top-right corner is the
+;square of its size, and if we know that we can subtract
+;the sides 3 times to get the previous corners)
+;We call this function for each square up to the specified
+;size. Note that each square is an odd size.
 
 (defn get-diagonals-for-square
   [size]
