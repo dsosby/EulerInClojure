@@ -1,3 +1,5 @@
+(ns euler.prob2)
+
 ;Project Euler - Problem 2
 ;Sum all even Fibonacci numbers < 4000000
 
@@ -12,5 +14,8 @@
           (recur fib cur max))
         nil))))
 
-(time (println "Result=" (reduce + (even-fibonnaci 4000000))))
+(defn get-sum [max]
+  (reduce + (even-fibonnaci max)))
+
+;(time (println "Result=" (get-sum 4000000)))
 

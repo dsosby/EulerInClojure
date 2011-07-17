@@ -1,3 +1,5 @@
+(ns euler.prob28)
+
 ;Project Euler - Problem 28
 ;Breaking this problem down, we can see that we want to
 ;be able to grab the diagonals for each square and sum 
@@ -23,4 +25,4 @@
     (if (empty? sides) cursum
       (recur (+ cursum (reduce + (get-diagonals-for-square (first sides)))) (rest sides)))))
 
-(time (println "Result=" (sum-diagonals-on-spiral 1001)))
+;(time (println "Result=" (sum-diagonals-on-spiral 1001)))

@@ -1,3 +1,5 @@
+(ns euler.prob1)
+
 ;Project Euler Problem 1
 ;Return the sum of all unique multiples of 3 and 5 up to 1000
 ;This version uses loop to make the single-recursive-function "easier" to read
@@ -16,4 +18,4 @@
         (recur (+ sum sumadder) (inc adder)))
       sum)))
 
-(time (println "Result=" (sum-it-up 1000))) 
+;(time (println "Result=" (sum-it-up 1000))) 
