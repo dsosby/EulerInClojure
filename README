@@ -1,3 +1,16 @@
-Project Euler problems worked in Clojure
+     Project Euler problems worked in Clojure
+====================================================
+More info at http://github.com/dsosby/EulerInClojure
 
-Feel free to use these as you wish.
+Author: David Sosby
+        dsosby@gmail.com
+        http://ramdump.com
+
+Usage:
+	Print all answers:   lein run
+	Test all problems:   lein test
+	Test single problem: lein euler.test.probN
+
+More info:
+	http://projecteuler.net
+	http://github.com/technomancy/leiningen
